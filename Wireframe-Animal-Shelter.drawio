@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-13T02:26:08.227Z" agent="5.0 (Macintosh)" etag="YlmS8SdjHux7eTeyE8tv" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-13T02:28:18.657Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" etag="RR4TrZpitr8npDxDzzlk" version="18.0.3" type="github">
   <diagram id="Wtf4xJytpij9x_gFcfHL" name="Page-1">
-    <mxGraphModel dx="1440" dy="993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="1">
+    <mxGraphModel dx="2562" dy="982" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -421,7 +421,7 @@
         <mxCell id="MR7r0xcLaj4WNNmaxe_Y-41" value="Text Carousel&lt;br&gt;Client Testimonials" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1895" y="939" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2xvqOemwckODqJgOykbF-47" value="View Profile" style="rounded=1;fillColor=#0057D8;align=center;strokeColor=none;html=1;fontColor=#ffffff;fontSize=12;sketch=0;" vertex="1" parent="1">
+        <mxCell id="2xvqOemwckODqJgOykbF-47" value="Claim" style="rounded=1;fillColor=#0057D8;align=center;strokeColor=none;html=1;fontColor=#ffffff;fontSize=12;sketch=0;" vertex="1" parent="1">
           <mxGeometry x="2750" y="1010" width="340" height="33" as="geometry" />
         </mxCell>
         <mxCell id="MR7r0xcLaj4WNNmaxe_Y-42" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
@@ -496,7 +496,7 @@
             <mxPoint x="1330" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="2xvqOemwckODqJgOykbF-59" value="View Profile" style="rounded=1;fillColor=#0057D8;align=center;strokeColor=none;html=1;fontColor=#ffffff;fontSize=12;sketch=0;" vertex="1" parent="1">
+        <mxCell id="2xvqOemwckODqJgOykbF-59" value="Claim" style="rounded=1;fillColor=#0057D8;align=center;strokeColor=none;html=1;fontColor=#ffffff;fontSize=12;sketch=0;" vertex="1" parent="1">
           <mxGeometry x="2752" y="1460" width="340" height="33" as="geometry" />
         </mxCell>
         <mxCell id="0G6ShP2uXCijBBHxX8kc-173" value="" style="endArrow=none;html=1;rounded=0;fontSize=20;fontColor=#000000;strokeWidth=4;strokeColor=#FFFFFF;" edge="1" parent="1">
