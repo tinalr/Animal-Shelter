@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-13T02:42:35.555Z" agent="5.0 (Macintosh)" etag="R3pLR_eVnNFdyIC53zE4" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-13T02:44:32.807Z" agent="5.0 (Macintosh)" etag="4kntT7pLTXEHeXBpdXUo" version="18.0.2" type="github">
   <diagram id="Wtf4xJytpij9x_gFcfHL" name="Page-1">
     <mxGraphModel dx="1006" dy="993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="1">
       <root>
@@ -294,9 +294,6 @@
         </mxCell>
         <mxCell id="MR7r0xcLaj4WNNmaxe_Y-25" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="1">
           <mxGeometry x="1816" y="510" width="135" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="2xvqOemwckODqJgOykbF-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2xvqOemwckODqJgOykbF-24" target="MR7r0xcLaj4WNNmaxe_Y-8">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="MR7r0xcLaj4WNNmaxe_Y-28" value="Animal Protection" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1853.5" y="675" width="60" height="30" as="geometry" />
