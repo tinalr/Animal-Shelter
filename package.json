@@ -1,0 +1,27 @@
+{
+  "name": "animal-shelter",
+  "version": "1.0.0",
+  "description": "Fictional Animal Shelter Website, Portfolio Project Created by Adam, Christina, and Edgar",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinalr/Animal-Shelter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinalr/Animal-Shelter/issues"
+  },
+  "homepage": "https://github.com/tinalr/Animal-Shelter#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
