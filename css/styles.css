@@ -5,3 +5,14 @@ body {
 h1, h2 {
     font-family: 'Pacifico', cursive;
 }
+
+h3 {
+    color: #f95738;
+    text-align: center;
+}
+
+/* Make the image fully responsive */
+carousel-inner img {
+width: auto;
+height: 100%;
+}
