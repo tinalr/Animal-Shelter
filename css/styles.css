@@ -6,6 +6,11 @@ h1, h2 {
     font-family: 'Pacifico', cursive;
 }
 
+.logo-lg {
+    max-width: 300px;
+    min-width: 100px;
+}
+
 #jumbotron {
     background-color: #ffbd59ff;
 }
