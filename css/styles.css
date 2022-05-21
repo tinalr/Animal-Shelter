@@ -6,6 +6,10 @@ h1, h2 {
     font-family: 'Pacifico', cursive;
 }
 
+header .row {
+    --bs-gutter-x: 0rem;
+}
+
 .logo-lg {
     max-width: 300px;
     min-width: 100px;
