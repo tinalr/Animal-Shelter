@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Lost & Found</title>
@@ -42,10 +46,104 @@
 </header>
 <!-- END  HEADER --> 
 
+<!-- BEGIN L&F HERO -->
+<div class="container-fluid p-5 mb-5">  <!-- add background image to fluid container of dog -->
+    <div class="row text-center">
+        <h2>Lost and Found <i class="fa fa-bandcamp" aria-hidden="true"></i>
+        </h2>
+    </div>
+    <div class="row text-center">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, molestias?</p>
+    </div>
+    <div class="row text-center">
+        <div class="div">
+            <button type="button" class="btn btn-danger">Lost Pet</button>
+            <button type="button" class="btn btn-primary">Found Pet</button>
+        </div>
+    </div>
+</div>
+<!-- END L&F HERO -->
+
+<!-- BEGIN PET CARD CONTAINER -->
+<div class="container lost-pets-container mb-5">
+    <!-- filter drop down -->
+    <div class="row mb-5">
+        <div class="col-3 mx-auto">
+            <select class="form-select" id="pet-type">
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Other</option>
+              </select>
+        </div>
+    </div>
+
+    <div class="all-pets container">
+        <div class="row g-3">
+
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- card-container -->
+</div>
+<!-- END PET CARD CONTAINER -->
+
+
 
 
 <!-- BEGIN  FOOTER -->
-
 <div class="container-fluid">
     <div class="row">
         <div class="col col-sm-4">Map</div>
