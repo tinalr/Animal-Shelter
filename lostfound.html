@@ -21,103 +21,62 @@
 <body class="lost">
 
 <!-- BEGIN LOST PET MODAL -->
-<div class="modal fade" id="lostPetModal" tabindex="-1" aria-labelledby="modalForLostPets" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade " id="lostPetModal" tabindex="-1" aria-labelledby="modalForLostPets" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Lost Pet Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="modal-body">
+                <div class="row">
+                    <!-- pet name -->
+                    <div class="col-sm-6 mb-3">
+                        <label for="petName" class="form-label">Pet Name</label>
+                        <input type="text" class="form-control" id="petName">
+                    </div>
+                    <!-- pet location -->
+                    <div class="col-sm-6 mb-3">
+                        <label for="petLocation" class="form-label">Pet Location</label>
+                        <input type="text" class="form-control" id="petLocation">
+                    </div>
+                </div>
+                <!-- owner name -->
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <label for="ownerName" class="form-label">Owner's Name</label>
+                        <input type="text" class="form-control" id="ownerName">
+                    </div>
+                    <!-- owner number -->
+                    <div class="col-sm-6 mb-3">
+                            <label for="ownerNumber" class="form-label">Owner Number</label>
+                            <input type="tel" class="form-control" id="ownerNumber">
+                    </div>
+                </div>
+                <!-- owner email -->
+                <div class="mb-3">
+                    <label for="ownerEmail" class="form-label">Owner Email</label>
+                    <input type="email" class="form-control" id="petName">
+                </div>
+                <!-- owner email -->
+                <div class="mb-3">
+                    <label for="ownerEmail" class="form-label">Owner Email</label>
+                    <input type="email" class="form-control" id="petName">
+                </div>
+                <!-- description -->
+                <div class="mb-3">
+                    <label for="petDesc" class="form-label">Pet Description</label>
+                    <textarea class="form-control" id="petDesc"></textarea>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn text-light">Submit Form</button>
+            </div>
         </div>
-        <form class="modal-body">
-          <!-- pet name -->
-          <div class="mb-3">
-            <label for="petName" class="form-label">Pet Name</label>
-            <input type="text" class="form-control" id="petName">
-          </div>
-          <!-- pet location -->
-          <div class="mb-3">
-            <label for="petLocation" class="form-label">Pet Location</label>
-            <input type="text" class="form-control" id="petLocation">
-          </div>
-          <!-- owner name -->
-          <div class="mb-3">
-            <label for="ownerName" class="form-label">Owner's Name</label>
-            <input type="text" class="form-control" id="ownerName">
-          </div>
-          <!-- owner number -->
-          <div class="mb-3">
-            <label for="ownerNumber" class="form-label">Owner Number</label>
-            <input type="tel" class="form-control" id="ownerNumber">
-          </div>
-          <!-- owner email -->
-          <div class="mb-3">
-            <label for="ownerEmail" class="form-label">Owner Email</label>
-            <input type="email" class="form-control" id="petName">
-          </div>
-          <!-- description -->
-          <div class="mb-3">
-            <label for="petDesc" class="form-label">Pet Description</label>
-            <textarea class="form-control" id="petDesc"></textarea>
-          </div>
-        </form>
-        <div class="modal-footer">
-          <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn text-light">Submit Form</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
   <!-- END LOST PET MODAL -->
-
-  <!-- BEGIN FOUND PET MODAL -->
-<div class="modal fade" id="lostPetModal" tabindex="-1" aria-labelledby="modalForLostPets" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form class="modal-body">
-          <!-- pet name -->
-          <div class="mb-3">
-            <label for="petName" class="form-label">Pet Name</label>
-            <input type="text" class="form-control" id="petName">
-          </div>
-          <!-- pet location -->
-          <div class="mb-3">
-            <label for="petLocation" class="form-label">Pet Location</label>
-            <input type="text" class="form-control" id="petLocation">
-          </div>
-          <!-- owner name -->
-          <div class="mb-3">
-            <label for="ownerName" class="form-label">Owner's Name</label>
-            <input type="text" class="form-control" id="ownerName">
-          </div>
-          <!-- owner number -->
-          <div class="mb-3">
-            <label for="ownerNumber" class="form-label">Owner Number</label>
-            <input type="tel" class="form-control" id="ownerNumber">
-          </div>
-          <!-- owner email -->
-          <div class="mb-3">
-            <label for="ownerEmail" class="form-label">Owner Email</label>
-            <input type="email" class="form-control" id="petName">
-          </div>
-          <!-- description -->
-          <div class="mb-3">
-            <label for="petDesc" class="form-label">Pet Description</label>
-            <textarea class="form-control" id="petDesc"></textarea>
-          </div>
-        </form>
-        <div class="modal-footer">
-          <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn text-light">Submit Form</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END FOUND PET MODAL -->
-
 
 <!-- BEGIN  HEADER -->
 <header>
@@ -156,8 +115,7 @@
     </div>
     <div class="row text-center">
         <div class="div">
-            <button type="button" class="btn text-light d-block d-sm-inline-block mb-3 mb-sm-0 fs-5 mx-auto" data-bs-toggle="modal" data-bs-target="#lostPetModal">Lost Pet</button>
-            <button type="button" class="btn text-light d-block d-sm-inline-block fs-5 mx-auto">Found Pet</button>
+            <button type="button" class="btn text-light fs-5" data-bs-toggle="modal" data-bs-target="#lostPetModal">Lost Pet</button>
         </div>
     </div>
 </div>
@@ -177,9 +135,9 @@
     </div>
 
     <div class="all-pets container">
-        <div class="row g-3">
+        <div class="all-pets-row row g-4">
 
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+            <!-- <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Pet Name</h5>
@@ -191,7 +149,7 @@
                     <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+            <div class="card col-md-3 mx-auto pet-card">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Pet Name</h5>
@@ -229,6 +187,45 @@
                     </a>
                 </div>
             </div>
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pet Name</h5>
+                    <p class="card-text pet-id">ID: 123456</p>
+                    <p class="card-text pet-gender">Gender: Female</p>
+                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
+                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
+                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
+                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div> -->
             
         </div>
     </div>
@@ -280,13 +277,14 @@
 
 
 <!-- TODO::
-1. Modals for all the buttons
+1. Modals claim pet
 2. create JS to put all the tiles in the page
 -->
 
 
 <!-- SCRIPTS -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/lostPets.js"></script>
 <script src="scripts/script.js"></script>
 
 </body>
