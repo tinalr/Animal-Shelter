@@ -43,3 +43,11 @@ header .row {
 #social-nav {
     background-color: #ffbd59ff;
 }
+
+/* LOST AND FOUND */
+.lost .lost-hero {
+    background: rgba(0,0,0,0.5) url(/assets/lost-dogs.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
