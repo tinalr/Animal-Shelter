@@ -63,9 +63,22 @@ header .row {
     background-color: #ffbd59ff;
 }
 
+/* LOST AND FOUND */
+.lost .lost-hero {
+    background: rgba(0,0,0,0.5) url(/assets/lost-dogs.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.lost .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Make the image fully responsive */
 .carousel-inner img {
     width: 50%;
 
 }
-
