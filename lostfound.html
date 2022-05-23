@@ -12,7 +12,6 @@
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Lost & Found</title>
@@ -25,7 +24,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Lost Pet Form</h5>
+            <h5 class="modal-title" id="lostPetModalLabel">Lost Pet Form</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form class="modal-body">
@@ -78,6 +77,49 @@
 </div>
   <!-- END LOST PET MODAL -->
 
+  <!-- BEGIN CLAIM PET MODAL -->
+<div class="modal fade " id="claimPetModal" tabindex="-1" aria-labelledby="modalClaimLostPets" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="claimPetModalLabel">Lost Pet Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form class="modal-body">
+                <div class="row">
+                    <!-- pet name -->
+                    <div class="col-sm-6 mb-3">
+                        <label for="ownerName" class="form-label">Owner Name</label>
+                        <input type="text" class="form-control" id="ownerName">
+                    </div>
+                    <!-- pet location -->
+                    <div class="col-sm-6 mb-3">
+                        <label for="ownerEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="ownerEmail">
+                    </div>
+                </div>
+                <!-- owner name -->
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <label for="ownerPhone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="ownerPhone">
+                    </div>
+                    <!-- owner number -->
+                    <div class="col-sm-6 mb-3">
+                            <label for="petID" class="form-label">Pet ID</label>
+                            <input type="text" class="form-control" id="ownerNumber">
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn text-light">Submit Form</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!-- END CLAIM PET MODAL -->
+
 <!-- BEGIN  HEADER -->
 <header>
 
@@ -103,6 +145,7 @@
 
 <!-- BEGIN L&F HERO -->
 <div class="container-fluid lost-hero p-5 mb-5">  <!-- add background image to fluid container of dog -->
+    
     <div class="row text-center mb-4">
         <div class="col text-center">
             <img class="logo-lg" src="assets/logo-transparent.png" alt="logo">
@@ -118,6 +161,7 @@
             <button type="button" class="btn text-light fs-5" data-bs-toggle="modal" data-bs-target="#lostPetModal">Lost Pet</button>
         </div>
     </div>
+    
 </div>
 <!-- END L&F HERO -->
 
@@ -127,106 +171,17 @@
     <div class="row mb-5">
         <div class="col-3 mx-auto">
             <select class="form-select" id="pet-type">
-                <option>Dog</option>
-                <option>Cat</option>
-                <option>Other</option>
+                <option value="all">All</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="other">Other</option>
               </select>
         </div>
     </div>
 
     <div class="all-pets container">
         <div class="all-pets-row row g-4">
-
-            <!-- <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card col-md-3 mx-auto pet-card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Pet Name</h5>
-                    <p class="card-text pet-id">ID: 123456</p>
-                    <p class="card-text pet-gender">Gender: Female</p>
-                    <p class="card-text pet-breed">Breed: Boxer/Mix</p>
-                    <p class="card-text pet-location">Location Found: Rockrimmon</p>
-                    <p class="card-text pet-weight">Weight: 60.4 lbs</p>
-                    <a href="#" class="btn btn-primary">Claim <i class="fa fa-paw" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div> -->
-            
+            <!-- PET CARDS GO HERE -->
         </div>
     </div>
 
@@ -278,7 +233,7 @@
 
 <!-- TODO::
 1. Modals claim pet
-2. create JS to put all the tiles in the page
+2. Filter animals with drop down
 -->
 
 
