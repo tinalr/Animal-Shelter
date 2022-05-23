@@ -43,14 +43,12 @@ function clearBoard() {
 }
 
 // handler for the select option
-lostPetTypeSelectEl.addEventListener('change', function () { 
+lostPetTypeSelectEl.addEventListener('change', function () {
     const petTypeChosen = this.value;
     
     clearBoard();
     drawPetType(lostPets, petTypeChosen);
-})
-
-
+});
 
 
 drawPetType(lostPets, 'all');
