@@ -52,7 +52,6 @@ header .row {
 
 .card {
     max-width: 500px;
-    
 }
 
 #jumbotron {
@@ -64,6 +63,12 @@ header .row {
 }
 
 /* LOST AND FOUND */
+
+
+.lost .modal-header {
+    background-color: #17bebbff; 
+}
+
 .lost .lost-hero {
     background: rgba(0,0,0,0.5) url(/assets/lost-dogs.jpg) no-repeat center;
     background-size: cover;
