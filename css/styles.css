@@ -6,6 +6,7 @@ h1, h2 {
     font-family: 'Pacifico', cursive;
 }
 
+
 h3 {
     color: #f95738;
     text-align: center;
@@ -74,7 +75,47 @@ header .row {
     object-position: center;
 }
 
+footer {
+    background-color: #faf0caff;
+}
+
+header .row {
+    --bs-gutter-x: 0rem;
+}
+
+.navbar {
+    background-color: #faf0caff;
+}
+
+.logo-lg {
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.btn, .btn:after, .btn:hover {
+    background-color: #17bebbff;
+}
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(23, 190, 187, 0.25);
+}
+
+.card {
+    max-width: 500px;
+    
+}
+
+#jumbotron {
+    background-color: #ffbd59ff;
+}
+
+#social-nav {
+    background-color: #ffbd59ff;
+}
+
 /* Make the image fully responsive */
 .carousel-inner img {
     width: 50%;
+
 }
+
