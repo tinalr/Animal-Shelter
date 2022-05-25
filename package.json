@@ -11,7 +11,7 @@
     "watch-mac:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch-mac:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "watch-win:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch-win:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "watch-win:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
 
   },
   "repository": {
