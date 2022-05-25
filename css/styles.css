@@ -43,6 +43,13 @@ header .row {
   box-shadow: 0 0 0 0.25rem rgba(23, 190, 187, 0.25);
 }
 
+.card {
+    max-width: 500px;
+}
+.card-img-overlay {
+    left: 15px;
+}
+
 #jumbotron {
     background-color: #ffbd59ff;
 }
