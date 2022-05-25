@@ -8,11 +8,11 @@
     "start-mac": "npm run watch-mac:all",
     "start-win": "npm run watch-win:all",
     "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
     "watch-mac:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch-mac:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "watch-mac:all": "parallelshell 'npm run watch-mac:scss' 'npm run lite'",
     "watch-win:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch-win:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
-
+    "watch-win:all": "parallelshell \"npm run watch-win:scss\" \"npm run lite\""
   },
   "repository": {
     "type": "git",
@@ -26,11 +26,12 @@
   "homepage": "https://github.com/tinalr/Animal-Shelter#readme",
   "devDependencies": {
     "lite-server": "^2.6.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "3.0.1"
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "scss": "^0.2.4"
   }
 }
