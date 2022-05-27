@@ -9,10 +9,14 @@
     "start-win": "npm run watch-win:all",
     "lite": "lite-server",
     "watch-mac:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch-mac:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "watch-mac:all": "parallelshell 'npm run watch-mac:scss' 'npm run lite'",
     "watch-win:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "watch-win:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
-
+    "watch-win:all": "parallelshell \"npm run watch-win:scss\" \"npm run lite\"",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -26,11 +30,13 @@
   "homepage": "https://github.com/tinalr/Animal-Shelter#readme",
   "devDependencies": {
     "lite-server": "^2.6.1",
-    "onchange": "^7.0.0",
+    "node-sass": "^6.0.1",
+    "onchange": "^7.1.0",
     "parallelshell": "3.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "scss": "^0.2.4"
   }
 }

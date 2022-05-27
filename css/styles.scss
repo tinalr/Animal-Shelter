@@ -1,0 +1,101 @@
+$indigo-dye: rgba(13, 59, 102, 1);
+$lemon-meringue: rgba(250, 240, 202, 1);
+$maximum-yellow-red: rgba(255, 189, 89, 1);
+$orange-soda: rgba(249, 87, 56, 1);
+$tiffany-blue: rgba(23, 190, 187, 1);
+$tiffany-blue-transparent: rgba(23, 190, 187, 0.25);
+$gray-transparent: rgba(0,0,0,0.5);
+
+$font-heading: 'Pacifico', cursive;
+$font-body: 'Quicksand', sans-serif;
+
+
+
+body {
+    font-family: $font-body;
+    
+}
+
+h1, h2 {
+    font-family: $font-heading;
+}
+
+
+h3 {
+    color: $orange-soda;
+    text-align: center;
+}
+
+h4 {
+    color: $indigo-dye;
+    text-align: center;
+}
+
+footer {
+    background-color: $lemon-meringue;
+}
+
+header .row {
+    --bs-gutter-x: 0rem;
+}
+
+.navbar {
+    background-color: $lemon-meringue;
+}
+
+.logo-lg {
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.btn, .btn:after, .btn:hover {
+    background-color: $tiffany-blue;
+}
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem $tiffany-blue-transparent;
+}
+
+
+.index {
+    .card-img-overlay {
+        left: 15px;
+}
+}
+
+.fa {
+    color: white;
+}
+
+#jumbotron {
+    background-color: $maximum-yellow-red;
+}
+
+#social-nav {
+    background-color: $maximum-yellow-red;
+}
+
+/* LOST AND FOUND */
+
+.lost .modal-header {
+    background-color: $tiffany-blue; 
+}
+
+.lost .lost-hero {
+    background: $gray-transparent url(/assets/lost-dogs.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.lost .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 50%;
+
+}
