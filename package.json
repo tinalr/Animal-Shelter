@@ -5,11 +5,18 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run watch:all",
-    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "scss": "node-sass -o css/ css/",
-    "lite": "lite-server"
+    "start-mac": "npm run watch-mac:all",
+    "start-win": "npm run watch-win:all",
+    "lite": "lite-server",
+    "watch-mac:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch-mac:all": "parallelshell 'npm run watch-mac:scss' 'npm run lite'",
+    "watch-win:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch-win:all": "parallelshell \"npm run watch-win:scss\" \"npm run lite\"",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
@@ -25,7 +32,7 @@
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.1.0",
-    "parallelshell": "^3.0.1"
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
