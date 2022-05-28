@@ -9,19 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- SCRIPTS -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Resources & Services</title>
 </head>
 
 
-<body>
+<body class="resources">
     <!-- BEGIN  HEADER -->
     <header>
         <!-- TOP NAVEGATION BAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <img src="/assets/logo-transparent.png" class="float-left" alt="TransparentLogo" width = 60px>
                 <a class="navbar-brand" href="index.html"><h1>Porto Animal Shelter</h1></a>
@@ -42,14 +41,13 @@
     </header>
     <!-- END  HEADER --> 
 
-    <hr />
-
     <!--ADOPTION SHELTER SERVICES-->
-    <div class="container">
-        <h2>Pets Available For Adoption</h2>
+    <div class="container py-5">
+        <!-- <h2>Pets Available For Adoption</h2> -->
+        <h1 class="py-4">Adoptables of the Week</h1>
         <!--BEGIN OF CAROUSEL - STRAYS OF THE WEEK-->
         <div id="adoptableCarouselAnimals" class="carousel slide" data-bs-ride="carousel">
-            <h3>Adoptables Of The Week</h3>
+            <!-- <h3>Adoptables Of The Week</h3> -->
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-bs-target="#adoptableCarouselAnimals" data-bs-slide-to="0" class="active"></li></a>
@@ -62,28 +60,28 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="adoption.html"><img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog1.png" alt="AdoptableDog1"></a>
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog1.png" alt="AdoptableDog1"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="adoption.html"><img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog2.png" alt="AdoptableDog2"></a>
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog2.png" alt="AdoptableDog2"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="adoption.html"><img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Cat1.png" alt="AdoptableCat1"></a>
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Cat1.png" alt="AdoptableCat1"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="adoption.html"><img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog3.png" alt="AdoptableDog3"></a>
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog3.png" alt="AdoptableDog3"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="adoption.html"><img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog4.png" alt="AdoptableDog4"></a>
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog4.png" alt="AdoptableDog4"></a>
                 </div>
             </div>
         
             <!-- Left and right controls -->
-            <button class="carousel-control-prev" type="button" data-target="#adoptableCarouselAnimals" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#adoptableCarouselAnimals" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-target="#adoptableCarouselAnimals" data-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#adoptableCarouselAnimals" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </button>
@@ -91,33 +89,33 @@
         <!--END OF CAROUSEL - STRAYS OF THE WEEK-->
     </div>
 
-    <hr />
+   
 
     <!--ADDITIONAL SHELTER SERVICES-->
-    <div class="container">
-        <h2>Additional Shelter Services</h2>
+    <div class="container py-4">
+        <h1 class="py-4">Shelter Services</h1>
         <div class="row">
             <div class="col-sm-4">
-                <img src="/assets/Animal Protection.jpg" alt="Animal_Protection" class="mx-auto d-block">
+                <img src="/assets/Animal Protection.jpg" alt="Animal_Protection" class="mx-auto d-block rounded">
                 <h3>Animal Protection</h3>
             </div>
             <div class="col-sm-4">
-                <img src="/assets/Boarding Services.jpg" alt="Boarding Services" class="mx-auto d-block">
+                <img src="/assets/Boarding Services.jpg" alt="Boarding Services" class="mx-auto d-block rounded">
                 <h3>Boarding Services</h3>
 
             </div>
             <div class="col-sm-4">
-                <img src="/assets/Basic Med Services.jpg" alt="Basic Med Services" class="mx-auto d-block">
+                <img src="/assets/Basic Med Services.jpg" alt="Basic Med Services" class="mx-auto d-block rounded">
                 <h3>Basic Med Services</h3>        
             </div>
         </div>
     </div>
 
-    <hr />
+
 
     <!--ADDITIONAL RESOURCES-->
-    <div class="container">
-        <h2>Additional Resources</h2>
+    <div class="container py-4">
+        <h1 class="py-4">Resources</h1>
         <div class="container">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -126,7 +124,7 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla laudantium soluta animi magnam ipsa deleniti illum adipisci iusto, itaque qui fuga suscipit eligendi modi corporis recusandae quos, doloribus doloremque laboriosam omnis ullam blanditiis obcaecati esse. Perspiciatis ad fugit, sunt quidem suscipit minus beatae quasi sapiente explicabo tempore! Commodi, quas eius?</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +134,7 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit perspiciatis reprehenderit quas a inventore ut magnam voluptas reiciendis, dolores animi! Eius, maiores dolorum modi incidunt ad quasi enim similique dolor ab voluptatum repudiandae et, ullam, odit possimus quia consectetur? Similique beatae, animi libero quia consequuntur saepe repellendus quod eos ab, dolor, laudantium praesentium autem eveniet. Labore sed sequi nisi suscipit. Minima quos iste, maxime vitae, blanditiis saepe reprehenderit perspiciatis quod nihil distinctio nobis adipisci asperiores.</p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +144,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ex vel necessitatibus voluptates earum repellendus numquam magni quae maxime explicabo praesentium at blanditiis excepturi, nostrum error ducimus! At, praesentium magnam.</p>
                         </div>
                     </div>
                 </div>
@@ -154,33 +152,35 @@
         </div>
     </div>
 
-    <hr />
 
-    <div class="container">
-        <h2>Shelf-Serve Services</h2>
+
+    <div class="container py-4">
+        <h1 class="py-4">Online Services</h1>
         <div class="row">
             <div class="col-sm-4">
-                <img src="/assets/Forms.jpg" alt="Forms" class="mx-auto d-block">
+                <img src="/assets/Forms.jpg" alt="Forms" class="mx-auto d-block rounded">
                 <h3>Forms</h3>
             </div>
             <div class="col-sm-4">
-                <img src="/assets/Rx Refill.jpg" alt="Prescription Refill Request" class="mx-auto d-block">
+                <img src="/assets/Rx Refill.jpg" alt="Prescription Refill Request" class="mx-auto d-block rounded">
                 <h3>Prescription Refill Request</h3>
             </div>
             <div class="col-sm-4">
-                <img src="/assets/Payment Options.jpg" alt="Basic Med Services" class="mx-auto d-block">
+                <img src="/assets/Payment Options.jpg" alt="Basic Med Services" class="mx-auto d-block rounded">
                 <h3>Payment Options</h3>        
             </div>
         </div>
     </div>
 
 <!-- BEGIN  FOOTER -->
+
 <footer>
-    <!--MAP & CONTACT-->
-    <div class="container-fluid p-3 m-0">
+
+  <!--MAP & CONTACT-->
+    <div class="container-fluid p-3 mt-3 m-0">
         <div class="row">
             <div class="col col-sm-4">
-                <img class="w-100 p-3" src="assets/map.PNG" alt="location map">
+              <img class="w-100 p-3" src="assets/map.PNG" alt="location map">
             </div>
             <div class="col pt-2">
                 <h2>Porto Animal Shelter</h2>
@@ -197,21 +197,25 @@
     <!--SOCIAL NAV-->
     <div id="social-nav" class="container-fluid m-0">
         <div class="d-flex flex-wrap justify-content-between align-items-center px-0 py-3  mb-0 my-4">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-white lh-1">
-                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-                </a>
-                <span class="text-white">&copy; 2022 Company, Inc</span>
-            </div>
-        
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-            </ul>
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-white lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-white">&copy; 2022 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          </ul>
         </div>
-    </div>
+      </div>
 </footer>
+
 <!-- END  FOOTER -->
+
+ <!-- SCRIPTS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
