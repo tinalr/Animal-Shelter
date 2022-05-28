@@ -21,7 +21,7 @@
     <!-- BEGIN  HEADER -->
     <header>
         <!-- TOP NAVEGATION BAR -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <img src="/assets/logo-transparent.png" class="float-left" alt="TransparentLogo" width = 60px>
                 <a class="navbar-brand" href="index.html"><h1>Porto Animal Shelter</h1></a>
@@ -55,22 +55,22 @@
                 <li data-bs-target="#adoptableCarouselAnimals" data-bs-slide-to="4"></li>
             </ol>
 
-            <!-- The slideshow -->
+           <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog1.png" alt="AdoptableDog1">
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog1.png" alt="AdoptableDog1"></a>
                 </div>
                 <div class="carousel-item">
-                    <img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog2.png" alt="AdoptableDog2">
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog2.png" alt="AdoptableDog2"></a>
                 </div>
                 <div class="carousel-item">
-                    <img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Cat1.png" alt="AdoptableCat1">
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Cat1.png" alt="AdoptableCat1"></a>
                 </div>
                 <div class="carousel-item">
-                    <img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog3.png" alt="AdoptableDog3">
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog3.png" alt="AdoptableDog3"></a>
                 </div>
                 <div class="carousel-item">
-                    <img class="mx-auto d-block rounded" src="/assets/Carousel-Image_Dog4.png" alt="AdoptableDog4">
+                    <a href="adoption.html"><img class="mx-auto d-block rounded w-100" src="/assets/Carousel-Image_Dog4.png" alt="AdoptableDog4"></a>
                 </div>
             </div>
 
@@ -92,7 +92,7 @@
     <!--START OF SEARCH BY SPECIES BUTTON -->
     <div class="container p-5">
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Search By Species</button>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Search By Species</button>
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -103,7 +103,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find Your Best Friend</a>
+                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Find Your Best Friend</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Dog</a></li>
                                 <li><a class="dropdown-item" href="#">Cat</a></li>
@@ -112,8 +112,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn">Save changes</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                         <p class="card-text pet-breed"><strong>Breed:</strong> Cocker Spaniel / Mix</p>
                         <p class="card-text pet-location"><strong>Location:</strong> Foster Home</p>
                         <p class="card-text pet-weight"><strong>Weight:</strong> 16.4 lbs</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
                     </div>
                 </div>
                 <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
@@ -146,7 +146,7 @@
                         <p class="card-text pet-breed"><strong>Breed:</strong> French Bulldog / Mix</p>
                         <p class="card-text pet-location"><strong>Location:</strong> Indoor Kennels</p>
                         <p class="card-text pet-weight"><strong>Weight:</strong> 12.9 lbs</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
                     </div>
                 </div>
                 <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
@@ -158,7 +158,7 @@
                         <p class="card-text pet-breed"><strong>Breed:</strong> Basset Retriever / Mix</p>
                         <p class="card-text pet-location"><strong>Location:</strong> Outdoor Kennels</p>
                         <p class="card-text pet-weight"><strong>Weight:</strong> 26.1 lbs</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
                     </div>
                 </div>
                 <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
@@ -170,7 +170,7 @@
                         <p class="card-text pet-breed"><strong>Breed:</strong> Jack Russell Terrier / Mix</p>
                         <p class="card-text pet-location"><strong>Location:</strong> Indoor Kennels</p>
                         <p class="card-text pet-weight"><strong>Weight:</strong> 13.5 lbs</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
                     </div>
                 </div>
                 <div class="card col-md-3 mx-auto pet-card" style="width: 18rem;">
@@ -182,7 +182,7 @@
                         <p class="card-text pet-breed"><strong>Breed:</strong> Ragdoll/Mix</p>
                         <p class="card-text pet-location"><strong>Location:</strong> Rock Rock West</p>
                         <p class="card-text pet-weight"><strong>Weight:</strong> 12.4 lbs</p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#adoptModal">Adopt</button>
                     </div>
                 </div>
             </div>
@@ -256,7 +256,7 @@
     
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onClick="showMessage()" >Submit</button>
+                    <button type="button" class="btn" data-bs-dismiss="modal" onClick="showMessage()" >Submit</button>
                 </div>
             </div>
         </div>
