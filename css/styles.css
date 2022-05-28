@@ -23,6 +23,9 @@ header .row {
 .navbar {
   background-color: #faf0ca; }
 
+.active {
+  font-weight: bold; }
+
 .logo-lg {
   max-width: 300px;
   min-width: 100px; }
@@ -34,6 +37,24 @@ header .row {
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(23, 190, 187, 0.25); }
+
+.accordion-button {
+  background-color: #17bebb;
+  color: #fff; }
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #17bebb;
+  box-shadow: 0 0px 0 #17bebb; }
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #17bebb;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(23, 190, 187, 0.25); }
+
+.accordion h2 {
+  font-family: "Quicksand", sans-serif; }
 
 .index .card-img-overlay {
   left: 15px;
@@ -55,8 +76,9 @@ header .row {
   background-color: #ffbd59; }
 
 /* LOST AND FOUND */
-.lost .modal-header {
-  background-color: #17bebb; }
+.modal-header, .modal-header h3 {
+  background-color: #17bebb;
+  color: white; }
 
 .lost .lost-hero {
   background: rgba(0, 0, 0, 0.5) url(/assets/lost-dogs.jpg) no-repeat center;
