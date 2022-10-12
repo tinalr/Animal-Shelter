@@ -29,11 +29,13 @@
   },
   "homepage": "https://github.com/tinalr/Animal-Shelter#readme",
   "devDependencies": {
+    "clean": "^4.0.2",
     "copyfiles": "^2.4.1",
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.1.0",
-    "parallelshell": "3.0.1"
+    "parallelshell": "3.0.1",
+    "usemin": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
